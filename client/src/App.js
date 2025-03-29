@@ -8,25 +8,6 @@ function App() {
   const [ elapsedSeconds ] = useState(0);
   const remoteControl = useRef(new ClockControl());
 
-  setTimeout(_ => {
-    remoteControl.current.play();
-  }, 2000);
-
-  setTimeout(_ => {
-    remoteControl.current.pause();
-  }, 3000)
-
-  
-  setTimeout(_ => {
-    remoteControl.current.setElapsed(30*1000);
-  }, 4000)
-
-  
-  setTimeout(_ => {
-    remoteControl.current.play();
-  }, 5000)
-
-
   return (
     <div className="timer-dash-app">
       <Clock 
